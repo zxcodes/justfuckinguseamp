@@ -154,9 +154,7 @@ h3 {
 }
 
 .brand,
-.site-header nav,
-.header-cta,
-.header-actions {
+.site-header nav {
   display: flex;
   align-items: center;
 }
@@ -171,9 +169,11 @@ h3 {
   color: var(--muted);
 }
 
-.brand svg {
-  width: 62px;
-  height: 32px;
+.brand strong {
+  font-family: var(--display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
   color: var(--paper);
 }
 
@@ -200,30 +200,6 @@ h3 {
 .site-header nav a:hover {
   border-color: var(--line);
   background: rgba(246, 255, 245, 0.035);
-}
-
-.header-actions {
-  justify-self: end;
-  gap: 0.5rem;
-}
-
-.sign-in,
-.header-cta {
-  min-height: 30px;
-  padding: 0.32rem 0.72rem;
-  border-radius: 3px;
-  font-size: 0.76rem;
-}
-
-.sign-in {
-  border: 1px solid var(--line-strong);
-  color: var(--paper-soft);
-}
-
-.header-cta {
-  gap: 0.45rem;
-  color: var(--ink);
-  background: var(--orange);
 }
 
 .mobile-menu { display: none; }
@@ -352,8 +328,7 @@ h3 {
   background: var(--orange);
 }
 
-.button-primary:hover,
-.header-cta:hover {
+.button-primary:hover {
   background: #ffa067;
 }
 
@@ -1022,7 +997,7 @@ h3 {
   background: linear-gradient(145deg, rgba(246, 131, 59, 0.12), rgba(9, 28, 30, 0.35) 60%);
 }
 
-.tweet-feature p { font-size: clamp(2.2rem, 3.8vw, 4.7rem) !important; }
+.tweet-feature p { font-size: clamp(1.8rem, 2.8vw, 3.4rem) !important; }
 .tweet:nth-child(2) { grid-area: dillon; }
 .tweet:nth-child(3) { grid-area: brian; }
 .tweet:nth-child(4) { grid-area: shreyas; }
@@ -1263,6 +1238,19 @@ h3 {
 .footer-brand p,
 .footer-note { color: var(--muted); font-size: 0.68rem; }
 
+.footer-repo {
+  margin-top: 0.4rem;
+  display: inline-block;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.2em;
+}
+
+.footer-repo:hover { color: var(--paper); }
+
 .footer-links {
   grid-column: 7 / 13;
   display: grid;
@@ -1287,7 +1275,7 @@ h3 {
 .footer-note a { color: var(--paper-soft); text-decoration: underline; text-underline-offset: 0.18em; }
 
 @media (max-width: 1050px) {
-  .site-header { grid-template-columns: 1fr auto auto; }
+  .site-header { grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
   .hero-copy { grid-column: 2 / 12; }
   .hero-quote { grid-column: 2 / 12; }
@@ -1325,9 +1313,7 @@ h3 {
     height: 51px;
     grid-template-columns: 1fr auto;
   }
-  .brand svg { width: 55px; height: 28px; }
   .brand > span { display: none; }
-  .header-actions { display: none; }
   .mobile-menu {
     width: 48px;
     height: 48px;
