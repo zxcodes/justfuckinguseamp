@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Threads. Orbs. Runners. The argument for using Amp instead of building another agent workbench."
+    />
+    <meta name="theme-color" content="#091c1e" />
+    <meta property="og:title" content="Just fucking use Amp" />
+    <meta property="og:description" content="Threads. Orbs. Runners. The argument for using Amp instead of building another agent workbench." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://justfuckinguseamp.com/" />
+    <meta property="og:image" content="https://justfuckinguseamp.com/assets/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Just fucking use Amp — an independent field note about Amp’s threads, orbs, and runners." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Just fucking use Amp" />
+    <meta name="twitter:description" content="Threads. Orbs. Runners. The argument for using Amp instead of building another agent workbench." />
+    <meta name="twitter:image" content="https://justfuckinguseamp.com/assets/og.png" />
+    <meta name="twitter:image:alt" content="Just fucking use Amp — an independent field note about Amp’s threads, orbs, and runners." />
+    <title>Just fucking use Amp</title>
+    <link rel="preload" href="assets/fonts/SagittaireDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/Berkeley-Mono.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Just fucking use Amp, home">
+        <svg viewBox="0 0 281 144" fill="currentColor" aria-hidden="true">
+          <path d="M236.014 20C260.431 20 280.602 37.412 280.603 64.743C280.602 93.534 260.065 114.166 233.52 114.166C224.158 114.166 215.639 112.422 208.63 108.49C202.886 105.27 198.203 100.605 194.919 94.338L188.115 141.822L187.946 143.016H174.214L174.448 141.423L191.772 22.494H205.372L203.937 31.337C212.143 23.861 223.2 20 236.014 20ZM47.082 20.154C56.444 20.154 65.001 21.899 72.049 25.849C77.822 29.083 82.532 33.771 85.827 40.085L88.12 23.692L88.286 22.493H101.863L89.161 110.633L88.987 111.826H75.409L76.723 102.855C68.585 110.456 57.398 114.323 44.589 114.323C20.171 114.323 0 96.909 0 69.577C0 40.785 20.54 20.155 47.082 20.154ZM116.234 110.636L116.061 111.827H102.485L115.351 23.686L115.521 22.494H129.083L116.234 110.636ZM140.673 110.636L140.499 111.827H126.924L139.789 23.686L139.96 22.494H153.521L140.673 110.636ZM177.958 22.494L165.108 110.636L164.935 111.827H151.36L164.225 23.686L164.396 22.494H177.958ZM48.485 31.984C27.864 31.985 14.013 48.38 14.013 68.952C14.013 77.791 16.809 86.177 22.315 92.334C27.797 98.466 36.063 102.493 47.24 102.493C67.853 102.493 81.712 85.949 81.713 65.368C81.713 55.408 78.249 47.08 72.413 41.244C66.579 35.409 58.287 31.984 48.485 31.984ZM233.362 31.829C212.749 31.83 198.89 48.372 198.89 68.952C198.89 78.912 202.356 87.24 208.189 93.074C214.023 98.911 222.315 102.336 232.116 102.336C252.738 102.335 266.589 85.941 266.59 65.368C266.59 56.53 263.795 48.142 258.29 41.986C252.807 35.855 244.542 31.829 233.362 31.829Z" />
+        </svg>
+        <span>/ field note</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#primitives">Primitives</a>
+        <a href="#proof">Proof</a>
+        <a href="#honest">The honest bit</a>
+        <a href="#now">Now</a>
+      </nav>
+      <div class="header-actions">
+        <a class="sign-in" href="https://ampcode.com/auth/sign-in">Sign In</a>
+        <a class="header-cta" href="https://ampcode.com/auth/sign-up">Start <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="mobile-menu" href="#comparison" aria-label="Jump to the comparison">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" /></svg>
+      </a>
+    </header>
+
+    <main id="main">
+      <section class="hero grid-shell" id="top">
+        <div class="hero-copy">
+          <p class="kicker">An independent argument for fewer agent tricks</p>
+          <h1>Just fucking<br />use Amp.</h1>
+          <p class="hero-dek">
+            Other harnesses keep adding skill packs, orchestrators, and “must-have” stacks.
+            Amp got three primitives right and let the models use them.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://ampcode.com/auth/sign-up">Start with Amp <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#comparison">Make the 10-second case</a>
+          </div>
+        </div>
+
+        <div class="system-map" aria-label="A thread connects to an Amp orb, your runner, and your local checkout">
+          <div class="map-core">
+            <span class="map-index">T-01</span>
+            <strong>thread</strong>
+            <small>intent · history · proof</small>
+          </div>
+          <div class="map-node map-orb">
+            <span class="node-icon orb-icon" aria-hidden="true"></span>
+            <strong>orb</strong>
+            <small>Amp’s machine</small>
+          </div>
+          <div class="map-node map-runner">
+            <span class="node-icon runner-icon" aria-hidden="true"></span>
+            <strong>runner</strong>
+            <small>your machine</small>
+          </div>
+          <div class="map-node map-local">
+            <span class="node-icon local-icon" aria-hidden="true">›_</span>
+            <strong>local</strong>
+            <small>this checkout</small>
+          </div>
+          <span class="map-line line-orb" aria-hidden="true"></span>
+          <span class="map-line line-runner" aria-hidden="true"></span>
+          <span class="map-line line-local" aria-hidden="true"></span>
+        </div>
+
+        <blockquote class="hero-quote">
+          <p>“Get some simple primitives right—like threads and orbs and runners—and let the models use them.”</p>
+          <footer>Quinn Slack, <a href="https://x.com/sqs/status/2100856575934296101">@sqs</a></footer>
+        </blockquote>
+      </section>
+
+      <section class="comparison section-rule grid-shell" id="comparison">
+        <header class="section-intro">
+          <p class="kicker">The ten-second comparison</p>
+          <h2>The others sell you a workbench.<br />Amp gives the agent a computer.</h2>
+        </header>
+        <div class="compare-table" role="table" aria-label="Coding agent comparison">
+          <div class="compare-row compare-head" role="row">
+            <span role="columnheader">You want</span>
+            <span role="columnheader">The usual answer</span>
+            <span role="columnheader">Amp just does</span>
+          </div>
+          <div class="compare-row" role="row">
+            <span role="cell">Tab completion</span>
+            <span role="cell">An editor-shaped universe</span>
+            <span role="cell">Use the best tab tool. Give Amp the actual job.</span>
+          </div>
+          <div class="compare-row" role="row">
+            <span role="cell">A remote agent</span>
+            <span role="cell">Another cloud worker queue</span>
+            <span role="cell">A fresh orb per thread that sleeps free and wakes intact.</span>
+          </div>
+          <div class="compare-row" role="row">
+            <span role="cell">Your machine</span>
+            <span role="cell">tmux, SSH, glue scripts</span>
+            <span role="cell">One runner. Every repo. Start it from web or phone.</span>
+          </div>
+          <div class="compare-row" role="row">
+            <span role="cell">The right model</span>
+            <span role="cell">Pick a lab and stay loyal</span>
+            <span role="cell">Dial the difficulty. Route your subs and keys.</span>
+          </div>
+          <div class="compare-row" role="row">
+            <span role="cell">Team context</span>
+            <span role="cell">Seven tools and chat archaeology</span>
+            <span role="cell">Threads preserve intent, work, decisions, and proof.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="primitives section-rule" id="primitives">
+        <header class="primitives-heading grid-shell">
+          <p class="kicker">The actual technical argument</p>
+          <h2>Where the agent lives.<br />What survives when you close the lid.</h2>
+          <p>
+            Most tools optimize the chat box. Amp optimizes the unit of work and the machine doing it.
+          </p>
+        </header>
+
+        <article class="primitive grid-shell" id="threads">
+          <div class="primitive-label">
+            <span>01</span>
+            <strong>Threads</strong>
+          </div>
+          <div class="primitive-copy">
+            <h3>Context is an object,<br />not a vibe.</h3>
+            <p>
+              A thread is the work: every prompt, tool call, file, decision, and proof. It moves between the CLI,
+              web, iOS, macOS, and Slack without becoming a screenshot graveyard.
+            </p>
+            <ul class="feature-list">
+              <li>Stable history another agent can read</li>
+              <li>Focused handoffs instead of infinite compaction</li>
+              <li>Multiplayer control and team-visible intent</li>
+              <li>Agent-to-agent messages and file transfer</li>
+            </ul>
+            <a class="text-link" href="https://ampcode.com/docs/threads">Read about threads</a>
+          </div>
+          <div class="thread-window" aria-label="Illustration of an Amp thread">
+            <div class="window-bar"><span></span><span>Thread · Ship the landing page</span><em>high</em></div>
+            <div class="message user-message">
+              <small>YOU · 09:41</small>
+              <p>Build it. Then prove the mobile layout works.</p>
+            </div>
+            <div class="tool-call">
+              <small>AGENT · BROWSER</small>
+              <code>✓ desktop 1440 × 1000<br />✓ mobile 390 × 844</code>
+            </div>
+            <div class="message agent-message">
+              <span class="agent-glyph">A</span>
+              <p>Implemented and visually verified. Two captures attached.</p>
+            </div>
+            <div class="thread-branch"><span></span> handoff → focused review</div>
+          </div>
+        </article>
+
+        <article class="primitive grid-shell" id="orbs">
+          <div class="primitive-label">
+            <span>02</span>
+            <strong>Orbs</strong>
+          </div>
+          <div class="primitive-copy">
+            <h3>Stop multiplexing<br />your laptop.</h3>
+            <p>
+              Amp creates an isolated machine for the thread. It can run browsers, servers, test matrices, and long
+              proof loops without cooking your fans or colliding with yesterday’s dev server.
+            </p>
+            <ul class="feature-list">
+              <li>Fresh clone, tools, secrets, and configurable compute</li>
+              <li>Sleep when idle; wake with files and services intact</li>
+              <li>Live portals, terminal access, and desktop control</li>
+              <li>Wake on issues, CI failures, and schedules</li>
+            </ul>
+            <a class="text-link" href="https://ampcode.com/what-are-orbs">What are orbs?</a>
+          </div>
+          <div class="orb-visual" aria-hidden="true">
+            <div class="orbit orbit-one"><i></i></div>
+            <div class="orbit orbit-two"><i></i><i></i></div>
+            <div class="orb-center"><span></span><strong>ORB</strong><small>sleeping costs $0</small></div>
+            <div class="orb-log"><span>14:32:07</span> portal ready :5173<br /><span>14:32:11</span> e2e suite started<br /><span>14:48:52</span> 38/38 passed</div>
+          </div>
+        </article>
+
+        <article class="primitive grid-shell" id="runners">
+          <div class="primitive-label">
+            <span>03</span>
+            <strong>Runners</strong>
+          </div>
+          <div class="primitive-copy">
+            <h3>When the machine<br />has to be yours.</h3>
+            <p>
+              GPU, VPN, signing key, home lab, production bastion: run one small process on your hardware and start
+              threads there from anywhere. One runner can now serve many directories.
+            </p>
+            <div class="command"><span>$</span><code>amp --no-tui</code></div>
+            <a class="text-link" href="https://ampcode.com/docs/cli/runners">Set up a runner</a>
+          </div>
+          <div class="runner-stack" aria-label="Runner machine directories">
+            <div class="machine-top"><span class="live-dot"></span> mac-mini <em>connected</em></div>
+            <div class="directory active"><span>~/code/product</span><small>agent running</small></div>
+            <div class="directory"><span>~/code/ios-app</span><small>ready</small></div>
+            <div class="directory"><span>~/work/infrastructure</span><small>ready</small></div>
+            <div class="runner-foot">discovered 12 repositories · auto-update on</div>
+          </div>
+        </article>
+      </section>
+
+      <section class="agent-loop section-rule grid-shell">
+        <header class="section-intro">
+          <p class="kicker">The loop is built different</p>
+          <h2>Less agent theater.<br />More leverage.</h2>
+        </header>
+        <div class="loop-grid">
+          <article>
+            <span class="loop-glyph dial-glyph" aria-hidden="true"></span>
+            <h3>The Dial</h3>
+            <p>Choose how hard the job is—low, medium, high, ultra—not which model vendor gets your allegiance.</p>
+          </article>
+          <article>
+            <span class="loop-glyph oracle-glyph" aria-hidden="true">◉</span>
+            <h3>Oracle</h3>
+            <p>A real second brain for plans, reviews, hard bugs, and the judgment calls that change the solution.</p>
+          </article>
+          <article>
+            <span class="loop-glyph book-glyph" aria-hidden="true">⌘</span>
+            <h3>Librarian</h3>
+            <p>Reads the source—in public GitHub and private repos—instead of pretending the model remembers it.</p>
+          </article>
+          <article>
+            <span class="loop-glyph steer-glyph" aria-hidden="true">↝</span>
+            <h3>Steer, don’t nuke</h3>
+            <p>New direction joins the running turn at a sane seam. Continuity wins over cancel-and-respawn theater.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proof section-rule" id="proof">
+        <header class="proof-heading grid-shell">
+          <p class="kicker">Independent observations</p>
+          <h2>Not a trick.<br />A completely better experience.</h2>
+        </header>
+        <div class="tweet-wall grid-shell">
+          <a class="tweet tweet-feature" href="https://x.com/adamwathan/status/2092737556903231569">
+            <div class="tweet-user"><span class="avatar avatar-aw"><span>AW</span><img src="assets/avatars/adamwathan.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>Adam Wathan</strong><small>@adamwathan · Tailwind CSS</small></div><b>𝕏</b></div>
+            <p>“Amp is consistently 3–4 months ahead of every other harness.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet" href="https://x.com/dillon_mulroy/status/2013823122735055111">
+            <div class="tweet-user"><span class="avatar avatar-dm"><span>DM</span><img src="assets/avatars/dillon_mulroy.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>Dillon Mulroy</strong><small>@dillon_mulroy · Cloudflare</small></div><b>𝕏</b></div>
+            <p>“amp is the highest quality harness available rn with the best and most cohesive feature set”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet" href="https://x.com/CasJam/status/2100392360890818781">
+            <div class="tweet-user"><span class="avatar avatar-bc"><span>BC</span><img src="assets/avatars/CasJam.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>Brian Casel</strong><small>@CasJam</small></div><b>𝕏</b></div>
+            <p>“All my work is happening on orbs now… Each [team member] on their own orb.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet" href="https://x.com/Shreyassanthu77/status/2099144303457243269">
+            <div class="tweet-user"><span class="avatar avatar-sm"><span>SM</span><img src="assets/avatars/Shreyassanthu77.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>Shreyas Mididoddi</strong><small>@Shreyassanthu77</small></div><b>𝕏</b></div>
+            <p>“Amp is by far the best harness out right now… focused set of features and really, really well implemented.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet tweet-wide" href="https://x.com/mitchellh/status/1982858808285421889">
+            <div class="tweet-user"><span class="avatar avatar-mh"><span>MH</span><img src="assets/avatars/mitchellh.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>Mitchell Hashimoto</strong><small>@mitchellh · Ghostty / HashiCorp</small></div><b>𝕏</b></div>
+            <p>“Prompting an agent to metaphorically ‘complete the owl’ is some of the highest value you can get out of an agent… the given thread took the agent less than 10 seconds.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet" href="https://x.com/iannuttall/status/2100584421598347641">
+            <div class="tweet-user"><span class="avatar avatar-in"><span>IN</span><img src="assets/avatars/iannuttall.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>Ian Nuttall</strong><small>@iannuttall</small></div><b>𝕏</b></div>
+            <p>“‘just use Amp’ is becoming pretty much a foregone conclusion. Not an ad.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet" href="https://x.com/SkeletorJS/status/2098877928222466393">
+            <div class="tweet-user"><span class="avatar avatar-js"><span>JS</span><img src="assets/avatars/SkeletorJS.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>Jordan</strong><small>@SkeletorJS</small></div><b>𝕏</b></div>
+            <p>“Amp is hands down the best harness around and it’s not even close.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet tweet-small" href="https://x.com/stableshaman/status/2100559307632984186">
+            <div class="tweet-user"><span class="avatar avatar-ss"><span>SS</span><img src="assets/avatars/stableshaman.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>shaman</strong><small>@stableshaman</small></div><b>𝕏</b></div>
+            <p>“just use amp”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet tweet-zx-quality" href="https://x.com/zxcodes/status/2048833700906099113">
+            <div class="tweet-user"><span class="avatar avatar-zx"><span>ZX</span><img src="assets/avatars/zxcodes.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>zxcodes</strong><small>@zxcodes</small></div><b>𝕏</b></div>
+            <p>“Amp is the finest coding agent in the CLI space. Nothing comes close to it. Performance, tool calls, you name it. It just works beautifully.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+          <a class="tweet tweet-zx-primitives" href="https://x.com/zxcodes/status/2100872755172549112">
+            <div class="tweet-user"><span class="avatar avatar-zx"><span>ZX</span><img src="assets/avatars/zxcodes.jpg" width="160" height="160" loading="lazy" alt="" /></span><div><strong>zxcodes</strong><small>@zxcodes</small></div><b>𝕏</b></div>
+            <p>“Everyone else built harnesses while Amp built the right primitives that work together.”</p>
+            <footer>Open original post <span>↗</span></footer>
+          </a>
+        </div>
+      </section>
+
+      <section class="honest section-rule grid-shell" id="honest">
+        <header class="section-intro">
+          <p class="kicker">The honest bit</p>
+          <h2>A tool with taste<br />also knows what it isn’t.</h2>
+        </header>
+        <div class="honest-grid">
+          <div class="doesnt-win">
+            <h3>Amp does not win</h3>
+            <ul>
+              <li><strong>Inline tab completion.</strong><span>Use the best editor completion tool.</span></li>
+              <li><strong>Single-lab purity.</strong><span>If you only want one model in a tty, use that.</span></li>
+              <li><strong>Your 47-plugin shrine.</strong><span>Amp’s small surface area is the point.</span></li>
+              <li><strong>Instant cancellation.</strong><span>Steering favors continuity; huge threads can lag.</span></li>
+              <li><strong>Perfect uptime.</strong><span>Quality means the primitives are right—not that bugs never happen.</span></li>
+            </ul>
+          </div>
+          <blockquote class="taste-quote">
+            <p>“Opinionated and generally with great taste. You can feel it in every decision and interaction.”</p>
+            <footer>Dillon Mulroy, <a href="https://x.com/dillon_mulroy/status/2012698290337284548">@dillon_mulroy</a></footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="now section-rule grid-shell" id="now">
+        <header class="section-intro">
+          <p class="kicker">Amp right now · September 2026</p>
+          <h2>The primitive set<br />keeps compounding.</h2>
+        </header>
+        <div class="news-list">
+          <a class="news-feature" href="https://ampcode.com/news/one-runner-is-now-enough">
+            <time datetime="2026-09-17">17 SEP 2026</time>
+            <div><h3>One Runner Is Now Enough</h3><p>Serve many directories from one process, or let it discover your repositories.</p></div>
+            <span>↗</span>
+          </a>
+          <a href="https://ampcode.com/news/free-agent">
+            <time datetime="2026-09-13">13 SEP</time><div><h3>Free Agent</h3><p>Bring your compute and model subscriptions or keys.</p></div><span>↗</span>
+          </a>
+          <a href="https://ampcode.com/news/restack-your-changes">
+            <time datetime="2026-09-11">11 SEP</time><div><h3>Restack Your Changes</h3><p>Turn a working diff into a cleaner set of commits.</p></div><span>↗</span>
+          </a>
+          <a href="https://ampcode.com/news/build-your-own-dial">
+            <time datetime="2026-09-10">10 SEP</time><div><h3>Customize Your Dial</h3><p>Choose the models behind modes, or put your own agents on it.</p></div><span>↗</span>
+          </a>
+          <a href="https://ampcode.com/news/steer-dont-queue">
+            <time datetime="2026-09-08">08 SEP</time><div><h3>Steer, Don’t Queue</h3><p>Send new direction into the work sooner.</p></div><span>↗</span>
+          </a>
+          <a href="https://ampcode.com/chronicle">
+            <time>MORE</time><div><h3>Portals, schedules, desktop, iOS, multiplayer, agent-to-agent…</h3><p>The release stream is the argument.</p></div><span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="final-cta section-rule grid-shell">
+        <div>
+          <p class="kicker">Enough comparison shopping</p>
+          <h2>Give the agent<br />a computer.</h2>
+        </div>
+        <div class="install-block">
+          <p>Run it here. Start an orb. Leave one runner on the Mac mini. Open the thread on your phone and go outside.</p>
+          <div class="command command-large"><span>$</span><code>curl -fsSL https://ampcode.com/install.sh | bash</code></div>
+          <a class="button button-primary" href="https://ampcode.com/auth/sign-up">Just use Amp <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer grid-shell">
+      <div class="footer-brand">
+        <strong>Just fucking use Amp.</strong>
+        <p>Independent fan site. Not affiliated with Amp.</p>
+      </div>
+      <div class="footer-links">
+        <div><strong>Product</strong><a href="https://ampcode.com">Amp</a><a href="https://ampcode.com/pricing">Pricing</a><a href="https://ampcode.com/modes">Models</a></div>
+        <div><strong>Learn</strong><a href="https://ampcode.com/docs/threads">Threads</a><a href="https://ampcode.com/docs/orbs">Orbs</a><a href="https://ampcode.com/docs/cli/runners">Runners</a></div>
+        <div><strong>Follow</strong><a href="https://ampcode.com/chronicle">Chronicle</a><a href="https://x.com/ampcode">𝕏 @ampcode</a><a href="https://www.youtube.com/@AmpCodeInc">YouTube</a></div>
+      </div>
+      <div class="footer-note">
+        <span>Made by <a href="https://x.com/zxcodes">@zxcodes</a>.</span>
+        <span>Built from public documentation, announcements, and the words of people who use the thing.</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+# Dependencies and Wrangler state
+node_modules/
+.wrangler/
+
+# Local environment files
+.dev.vars*
+.env*
+
+# Build output and logs
+dist/
+out/
+*.log
+
+# Research and visual-review artifacts
+context.md
+reference-screens/
+
+# Editor and operating-system files
+.idea/
+.DS_Store
