@@ -37,6 +37,7 @@
   --blue: #7ea1a8;
   --line: rgba(135, 139, 134, 0.18);
   --line-strong: rgba(246, 255, 245, 0.18);
+  --rail: rgba(66, 96, 96, 0.56);
   --display: "Sagittaire Display", Georgia, serif;
   --text-serif: "Sagittaire Text", Georgia, serif;
   --mono: "Berkeley Mono", "SFMono-Regular", Consolas, monospace;
@@ -79,6 +80,20 @@ body::before {
   pointer-events: none;
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+}
+
+body::after {
+  position: fixed;
+  inset-block: 0;
+  left: 50%;
+  z-index: 11;
+  width: min(calc(100% - 2 * var(--grid-margin)), var(--max));
+  content: "";
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(to bottom, var(--rail) 0 2px, transparent 2px 14px) left top / 1px 100% no-repeat,
+    repeating-linear-gradient(to bottom, var(--rail) 0 2px, transparent 2px 14px) right top / 1px 100% no-repeat;
+  transform: translateX(-50%);
 }
 
 a {
@@ -133,7 +148,6 @@ h3 {
   height: 80px;
   margin-inline: auto;
   padding-inline: var(--cell-pad);
-  border-inline: 1px solid var(--line);
   display: grid;
   grid-template-columns: minmax(220px, 1fr) auto minmax(180px, 1fr);
   align-items: center;
@@ -219,7 +233,6 @@ h3 {
   max-width: var(--max);
   margin-inline: auto;
   padding-inline: var(--cell-pad);
-  border-inline: 1px solid var(--line);
 }
 
 .section-rule {
@@ -597,7 +610,7 @@ h3 {
 }
 
 .primitive {
-  min-height: 630px;
+  min-height: 600px;
   padding-top: clamp(3rem, 5vw, 5.5rem);
   padding-bottom: clamp(3rem, 5vw, 5.5rem);
   border-top: 1px solid var(--line);
@@ -653,7 +666,7 @@ h3 {
 .feature-list li {
   padding: 0.75rem 0 0.75rem 1.4rem;
   border-bottom: 1px solid var(--line);
-  color: var(--muted);
+  color: rgba(223, 231, 223, 0.78);
   position: relative;
 }
 
@@ -670,14 +683,14 @@ h3 {
 .orb-visual,
 .runner-stack {
   grid-column: 7 / 13;
-  min-height: 450px;
+  min-height: 420px;
   align-self: center;
   border: 1px solid var(--line-strong);
   background: rgba(6, 22, 23, 0.72);
 }
 
 .thread-window {
-  padding-bottom: 2rem;
+  padding-bottom: 1.25rem;
 }
 
 .window-bar {
@@ -689,7 +702,7 @@ h3 {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   font-family: var(--mono);
-  font-size: 0.62rem;
+  font-size: 0.66rem;
 }
 
 .window-bar > span:first-child {
@@ -707,7 +720,7 @@ h3 {
 
 .message,
 .tool-call {
-  margin: 2rem clamp(1rem, 5vw, 5rem) 0;
+  margin: 1.4rem clamp(1rem, 3vw, 3rem) 0;
   padding: 1rem;
   border: 1px solid var(--line);
 }
@@ -716,7 +729,7 @@ h3 {
 .tool-call small {
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 0.58rem;
+  font-size: 0.62rem;
 }
 
 .message p {
@@ -764,7 +777,7 @@ h3 {
 }
 
 .thread-branch {
-  margin: 1rem clamp(1rem, 5vw, 5rem) 0;
+  margin: 0.9rem clamp(1rem, 3vw, 3rem) 0;
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.64rem;
@@ -986,7 +999,7 @@ h3 {
     "feature feature shreyas ian"
     "mitchell mitchell jordan shaman"
     "zx-quality zx-quality zx-primitives zx-primitives";
-  align-items: start;
+  align-items: stretch;
 }
 
 .tweet {
@@ -1087,6 +1100,8 @@ h3 {
   font-size: clamp(1.2rem, 1.5vw, 1.65rem);
   line-height: 1.35;
 }
+
+.tweet-feature > p { margin: auto 0; }
 
 .tweet footer {
   margin-top: auto;
@@ -1338,15 +1353,15 @@ h3 {
   .hero .text-link { display: none; }
   .system-map { inset: 0; }
   .map-core { display: none; }
-  .map-node { min-height: 28px; padding: 0.35rem 0.55rem; opacity: 0.42; }
+  .map-node { min-height: 28px; padding: 0.35rem 0.55rem; opacity: 0.52; }
   .map-node strong { font-size: 0.62rem; }
-  .map-node small { font-size: 0.5rem; }
+  .map-node small { font-size: 0.54rem; }
   .map-orb { top: 5%; right: 28%; }
   .map-runner { top: 75%; right: 0.5rem; bottom: auto; }
   .map-local { top: 68%; bottom: auto; left: 0.5rem; }
   .hero-quote { grid-column: 1 / 13; margin-top: 7.5rem; }
   .hero-quote p { font-size: 0.73rem; }
-  .hero-quote footer { font-size: 0.5rem; }
+  .hero-quote footer { font-size: 0.56rem; }
   .comparison,
   .agent-loop,
   .honest,
@@ -1374,7 +1389,7 @@ h3 {
   .primitive-copy h3 { font-size: clamp(2.8rem, 13vw, 4rem); }
   .thread-window,
   .orb-visual,
-  .runner-stack { grid-column: 1 / 13; margin-top: 3rem; min-height: 350px; }
+  .runner-stack { grid-column: 1 / 13; margin-top: 2.25rem; min-height: 330px; }
   .runner-stack { min-height: auto; }
   .loop-grid { grid-template-columns: 1fr; }
   .tweet-wall {
